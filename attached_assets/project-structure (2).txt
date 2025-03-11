@@ -1,0 +1,68 @@
+course-management-system/
+├── .github/                          # GitHub specific configurations
+│   ├── PULL_REQUEST_TEMPLATE.md      # PR template
+│   └── workflows/                    # GitHub Actions workflows
+│       └── ci.yml                    # CI pipeline configuration
+│
+├── docs/                             # Documentation
+│   ├── requirements/                 # Project requirements
+│   │   ├── system-requirements.md
+│   │   └── user-stories.md
+│   ├── setup/                        # Setup guides
+│   │   ├── development.md
+│   │   └── deployment.md
+│   └── guidelines/                   # Project guidelines
+│       ├── git-workflow.md
+│       └── coding-standards.md
+│
+├── src/                              # Source code
+│   ├── api/                          # API layer
+│   │   ├── controllers/              # Request handlers
+│   │   │   ├── auth.controller.js
+│   │   │   ├── course.controller.js
+│   │   │   ├── student.controller.js
+│   │   │   └── faculty.controller.js
+│   │   ├── middleware/              # Custom middleware
+│   │   │   ├── auth.middleware.js
+│   │   │   └── validation.middleware.js
+│   │   ├── routes/                  # API routes
+│   │   │   ├── auth.routes.js
+│   │   │   ├── course.routes.js
+│   │   │   ├── student.routes.js
+│   │   │   └── faculty.routes.js
+│   │   └── validators/             # Request validators
+│   │       ├── auth.validator.js
+│   │       └── course.validator.js
+│   │
+│   ├── config/                     # Configuration files
+│   │   ├── database.js
+│   │   └── server.js
+│   │
+│   ├── models/                     # Data models
+│   │   ├── user.model.js
+│   │   ├── course.model.js
+│   │   └── enrollment.model.js
+│   │
+│   ├── services/                   # Business logic
+│   │   ├── auth.service.js
+│   │   ├── course.service.js
+│   │   └── grade.service.js
+│   │
+│   └── utils/                      # Utility functions
+│       ├── logger.js
+│       └── helpers.js
+│
+├── tests/                          # Test files
+│   ├── unit/                       # Unit tests
+│   │   ├── services/
+│   │   └── controllers/
+│   └── integration/                # Integration tests
+│       ├── auth.test.js
+│       └── course.test.js
+│
+├── .env.example                    # Environment variables template
+├── .eslintrc.js                   # ESLint configuration
+├── .gitignore                     # Git ignore rules
+├── package.json                   # Project dependencies
+├── README.md                      # Project documentation
+└── docker-compose.yml            # Docker configuration
